@@ -76,5 +76,30 @@
 
 <br><br><br><br><br><br>
 
+# WebRTC signaling - Why it is required ? | STUN & TURN | 
+
+ - First **signaling** is the process of setting up **controlling and terminating** a communication session between the clients.
+
+- Signaling is necessary to communicate between endpoint users in p2p(peer to peer) communication. Generally, to communicate between two endpoint **major three process needs to be happen:** 
+
+    - first, session control information need to be shared.
+    - exchange ip address and port related information between end users.
+    - Lastly, codec and media types of the end user need to be shared.
+    - **("codec" stands for "coder-decoder" or "compression-decompression" .It refers to a technology or algorithm that is used to compress and decompress data, typically for the purpose of encoding and decoding audio or video information.)** `like: XVID -> openCV`
+
+# **now let us look why these components are required in the communication session**
+
+- **Session Control** information will determine, when needs to be connected closed and send information between end users.
+
+- **Ip and port related information** are required to identify the end user and where he or she located.
+
+- **Codec and media type exchange** is required to set up the particular resolution and media configuration between end users.
+
+`And these data's our (metadata) then how this metadata are shared in between end users. And here comes session description protocol (SDP) protocol sdp will be used for the exchange of metadata.
+
+# Why signaling?
+- We already know that webrtc is a **web browser based technology** so there should be a **server required** to exchange the user data initially to set up webrtc connection. This server is called a **signaling server** and the process of sharing metadata is called **signaling** after the signaling process all the media and data will be exchanged via rtc peer connection of webrtc.
+
+
 
 
