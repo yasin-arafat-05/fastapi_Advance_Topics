@@ -1,6 +1,9 @@
-<br><br> <br>
+
+<br><br><br><br><br><br>
 
 # ________________________Lecture-01______________________
+
+<br><br><br><br><br><br>
 
 # What is WebRTC ? | Webrtc Introduction to beginners |
 
@@ -26,9 +29,12 @@
 - **`GetStats()`** this api helps to get `webrtc session` in the browser.
 
 
-<br> <br> <br>
+
+<br><br><br><br><br><br>
 
 # ________________________Lecture-02______________________
+
+<br><br><br><br><br><br>
 
 # WebRTC Vs Websocket:
 
@@ -63,7 +69,12 @@
 
 - Another interesting fact is **webrtc** uses **websocket** connection. WebRTC uses peer to peer technology and once the connection is up and running, you do not need to pass the **communication** via a server. When setting up  Webrtc **communication** you have to use uses **signaling mechanism** to achieve the connection.
 
-<br><br><br>
+<br><br><br><br><br><br>
 
 # ________________________Lecture-03______________________
+
+
+<br><br><br><br><br><br>
+
+
 
