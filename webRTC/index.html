@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Messenger</title>
+</head>
+<body>
+    <script>
+        const socket = new WebSocket("ws://127.0.0.1:8000/ws");
+
+        socket.onopen = () => {
+            console.log("WebSocket connection opened");
+            socket.send("offer");
+        };
+
+        socket.onmessage = (event) => {
+            const data = event.data;
+            if (data.startsWith("answer")) {
+                const sdp = data.split(" ", 1)[1];
+                // Handle the answer SDP
+            } else if (data.startsWith("ice")) {
+                const ice = data.split(" ", 1)[1];
+                // Handle the ICE candidate
+            }
+        };
+    </script>
+</body>
+</html>
